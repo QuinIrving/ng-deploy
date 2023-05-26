@@ -1,0 +1,18 @@
+.articleContainer {
+    flex: 2;
+  }
+
+  .contentSection {
+    height: 90%;
+    margin: 7% 16% 1% 20%;
+    display: flex;
+  }
+  .mainArticle {
+    flex: 4;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sideAnimation {
+    flex: 4;
+    display: flex;
+  }
