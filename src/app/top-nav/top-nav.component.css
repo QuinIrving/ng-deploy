@@ -1,0 +1,91 @@
+.mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #967259;
+}
+.mat-toolbar-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+}
+.left-align {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    flex-shrink: 1;
+}
+.center-align {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+.right-align {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 1;
+}
+.menuBar {
+    background-color: #ece0d1;
+    color: #634832;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
+.incHeight {
+    height: 90%;
+    padding: 0;
+}
+.iconSvg {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+}
+.iconAnchor {
+    color: white;
+    width: 33%;
+}
+.fillIcon {
+    animation: fillIcon 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fillIcon {
+    0% {
+
+    }
+    100% {
+        color: black;
+    }
+}
+.navLink {
+    width: 40%;
+    display: inline-block;
+}
+@media screen and (max-width: 800px) {
+    .left-align {
+        display: none;
+    }
+    .right-align {
+        display: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .center-align {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 350px) {
+    .center-align {
+        font-size: 1.5em;
+    }
+}

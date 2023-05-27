@@ -14,6 +14,9 @@ import { ProjBlockComponent } from './proj-block/proj-block.component';
 import { ContactBlockComponent } from './contact-block/contact-block.component';
 import { ResumeComponent } from './resume/resume.component';
 import { DiplomaComponent } from './diploma/diploma.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [
@@ -32,7 +35,8 @@ import { DiplomaComponent } from './diploma/diploma.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
