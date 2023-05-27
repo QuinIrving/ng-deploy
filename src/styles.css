@@ -2,3 +2,10 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+    background-color: #dbc1ac;
+    background-image: repeating-linear-gradient(to bottom left, transparent calc(50% - 3px), #ece0d1 50%, transparent calc(50% + 3px));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
