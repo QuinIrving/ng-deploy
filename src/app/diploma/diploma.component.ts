@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./diploma.component.css']
 })
 export class DiplomaComponent {
-  pdfSrc = "../assets/images/Diploma.pdf";
+  pdfSrc = "assets/images/Diploma.pdf";
 }
