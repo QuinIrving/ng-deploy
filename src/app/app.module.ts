@@ -16,7 +16,11 @@ import { ResumeComponent } from './resume/resume.component';
 import { DiplomaComponent } from './diploma/diploma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    MatTooltipModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,29 @@
-<p>side-nav works!</p>
+<mat-drawer-container class="sideNavDisplay" [hasBackdrop]="true">
+    <div class="sideIcon" #sideContainer>
+        <mat-icon class="iconSvg headerIcon" svgIcon="side-menu" matTooltip="Open Menu" aria-hidden="false" aria-label="Example user verified icon" (click)="openMenu(sideContainer)"></mat-icon>
+    </div>
+    <div class="sideNavContent">
+        <mat-toolbar class="sideNavHeader" (click)="closeMenu(sideContainer)" matTooltip="Close Menu">Menu</mat-toolbar>
+        <mat-nav-list class="sideNavList">
+            <a mat-list-item href="#">
+                <mat-icon class="iconSvg" svgIcon="home" matTooltip="Home" aria-hidden="false" aria-label="Example user verified icon"></mat-icon>
+            </a>
+            <a mat-list-item href="#">
+                <mat-icon class="iconSvg" svgIcon="diploma" matTooltip="View Diploma" aria-hidden="false" aria-label="Example user verified icon"></mat-icon>
+            </a>
+            <a mat-list-item href="#">
+                <mat-icon class="iconSvg" svgIcon="resume" matTooltip="View Resume" aria-hidden="false" aria-label="Example user verified icon"></mat-icon>
+            </a>
+            <span class="sideNavBreak">Break</span>
+            <a mat-list-item href="#">
+                <mat-icon class="iconSvg" svgIcon="github-box" matTooltip="View Diploma" aria-hidden="false" aria-label="Example user verified icon"></mat-icon>
+            </a>
+            <a mat-list-item href="#">
+                <mat-icon class="iconSvg" svgIcon="linkedin" matTooltip="View Diploma" aria-hidden="false" aria-label="Example user verified icon"></mat-icon>
+            </a>
+            <a mat-list-item href="#">
+                <mat-icon class="iconSvg" svgIcon="email" matTooltip="View Diploma" aria-hidden="false" aria-label="Example user verified icon"></mat-icon>
+            </a>
+        </mat-nav-list>
+    </div>
+</mat-drawer-container>

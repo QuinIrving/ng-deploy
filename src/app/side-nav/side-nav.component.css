@@ -1,0 +1,61 @@
+.sideNavDisplay {
+    display: none;
+    background: transparent;
+    
+}
+.sideIcon {
+    display: inline-block;
+    background: none;
+}
+.iconSvg {
+    height: 64px;
+    width: 64px;
+    color: white;
+}
+.sideNavContent {
+    display: none;
+    height: 100%;
+}
+.sideNavHeader {
+    color: white;
+    background: #967259;
+    font-size: 1.5em;
+}
+.sideNavList a {
+    height: 15%;
+}
+.sideNavBreak {
+    display: inline-block;
+    background: black;
+    width: 100%;
+}
+@media screen and (max-width: 800px) {
+    .sideNavDisplay {
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+    }
+}
+.hideIcon {
+    display: none;
+}
+.showMenu {
+    display: inline-block;
+    background: #ece0d1;
+}
+@media screen and (max-width: 350px) {
+    .sideNavHeader {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-height: 500px) {
+    .iconSvg {
+        height: 100%;
+        width: 11.5%;
+    }
+    .headerIcon {
+        height: 64px;
+        width: 64px;
+    }
+}
