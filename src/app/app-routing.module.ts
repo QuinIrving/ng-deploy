@@ -8,7 +8,10 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'diploma', component: DiplomaComponent },
-  { path: 'resume', component: ResumeComponent }
+  { path: 'resume', component: ResumeComponent },
+  { path: 'ng-deploy/home', component: HomeComponent },
+  { path: 'ng-deploy/diploma', component: DiplomaComponent },
+  { path: 'ng-deploy/resume', component: ResumeComponent }
 ];
 
 @NgModule({
