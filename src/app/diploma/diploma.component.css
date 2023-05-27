@@ -1,0 +1,9 @@
+.contentSection {
+    height: 100%;
+    margin: 1% 16% 1% 20%;
+    display: flex;
+  }
+  .imgDiploma {
+    width: 100%;
+    height: calc(98vh - 128px);
+  }

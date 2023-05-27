@@ -1,0 +1,44 @@
+.contactContent {
+    width: 100%;
+  }
+  .contactContainer {
+    display: flex;
+    width: 100%;
+  }
+  .contactHeader {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+  }
+  .contactIconContainer {
+    width: 33%;
+    margin: auto;
+    color: dimgray;
+    text-align: center;
+  }
+  .contactSection {
+    margin: 7% 16% 1% 20%;
+    display: flex;
+  }
+  .projectSection {
+    margin-top: 0;
+  }
+  .iconAnchor {
+    color: white;
+  }
+  .fillIcon {
+    animation: fillIcon 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fillIcon {
+    0% {
+
+    }
+    100% {
+      color: black;
+    }
+  }
+  .navLink {
+    width: 40%;
+    display: inline-block;
+  }

@@ -22,6 +22,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +47,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatIconModule,
     MatListModule,
     MatTooltipModule,
-    MatSidenavModule
+    MatSidenavModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

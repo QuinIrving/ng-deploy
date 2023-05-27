@@ -1,0 +1,298 @@
+  /* 
+    Setting all of the content to be away from the walls of the page.
+  */
+  .contentSection {
+    height: 90%;
+    margin: 7% 16% 1% 20%;
+    display: flex;
+  }
+
+  /* 
+    Contains the text of the About section.
+
+    *** Note: Remove parts of classes that don't matter or are redundant. ***
+  */
+  .mainArticle {
+    flex: 4;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /* 
+    Contains the pan w/ pancake animation of the About section.
+  */
+  .sideAnimation {
+    flex: 4;
+    display: flex;
+  }
+
+  /* 
+    Positioning and drawing the base of the pan.
+  */
+  .pan {
+    position: relative;
+    width: 380px;
+    height: 50px;
+    border: 8px solid #352a22;
+    border-radius: 10px 10px 60px 60px;
+    background: black;
+    z-index: 0;
+  }
+
+  /* 
+    Positioning and drawing the pan handle.
+  */
+  .pan .panHandle {
+    position: absolute;
+    width: 150px;
+    height: 20px;
+    border: 8px solid #352a22;
+    top: -30px;
+    left: -167px;
+    border-radius: 60px 0px 60px 0px;
+    transform: scaleY(-1);
+    background: black;
+  }
+
+  /* 
+    Positioning and drawing the pancake. 
+  */
+  .pan .pancake {
+    position: absolute;
+    background-color: yellow;
+    width: 5px;
+    height: 20px;
+    top: -20px;
+  }
+
+  /* 
+    Setup and use the pan animation so that it flips the pancake twice (one for each side).
+  */
+  .pan {
+    animation: movePan 6s infinite;
+  }
+  @keyframes movePan {
+    0% {
+      left: 0;
+    }
+    5% {
+      transform: rotate(0);
+      top: 0;
+    }
+    10% {
+      transform: rotate(30deg);
+    }
+    15% {
+      left: 100px;
+      transform: rotate(-30deg);
+      top: -100px;
+    }
+    40% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(0deg);
+      top: 0;
+      left: 0;
+    }
+    
+    55% {
+      transform: rotate(0);
+    }
+  }
+
+  /* 
+    
+  */
+  .pancake {
+    position: relative;
+    width: 262px;
+    height: 35px;
+    border: 4px solid #f8e5a4;
+    background-color: #f8e5a4;
+    left: -310px;
+    top: 10px;
+    border-radius: 10% 50% 50% 50% / 10% 10% 60% 60%;
+    z-index: -2;
+    animation: movePancakeBot 12s infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+  @keyframes movePancakeTop {
+    0% {
+      left: -310px;
+    }
+    5% {
+      transform: rotate(0);
+      top: 10px;
+      left: -240px;
+    }
+    10% {
+      transform: rotate(20deg);
+      left: -180px;
+      top: -50px;
+    }
+    15% {
+      left: -290px;
+      transform: rotate(-40deg);
+      top: -200px;
+    }
+    30% {
+      top: -400px;
+    }
+    45%, 100% {
+      transform: rotate(-540deg);
+      top: -15px;
+      left: -310px;
+      animation-fill-mode: forwards;
+    }
+  }
+  @keyframes movePancakeBot {
+    0% {
+      left: -310px;
+    }
+    2.5% {
+      transform: rotate(0);
+      top: 10px;
+      left: -240px;
+    }
+    5% {
+      transform: rotate(20deg);
+      left: -180px;
+      top: -50px;
+    }
+    7.5% {
+      left: -290px;
+      transform: rotate(-40deg);
+      top: -200px;
+    }
+    15% {
+      top: -400px;
+    }
+    22.5%, 50% {
+      transform: rotate(-540deg);
+      top: -15px;
+      left: -310px;
+      animation-fill-mode: forwards;
+    }
+    50% {
+      left: -310px;
+    }
+    52.5% {
+      transform: rotate(-540deg);
+      top: -15px;
+      left: -240px;
+    }
+    55% {
+      transform: rotate(-520deg);
+      left: -180px;
+      top: -65px;
+    }
+    57.5% {
+      left: -290px;
+      transform: rotate(-580deg);
+      top: -215px;
+    }
+    65% {
+      top: -400px;
+    }
+    72.5%, 100% {
+      transform: rotate(-1080deg);
+      top: 10px;
+      left: -310px;
+      animation-fill-mode: forwards;
+    }
+  }
+  .pancake .pancakeTop {
+    position: absolute;
+    border: 4px solid #f9a849; 
+    background-color: #f9a849;
+    width: 260px;
+    height: 40px;
+    left: -4px;
+    top: -30px;
+    z-index: -1;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  }
+  .panContainer {
+    flex: 1;
+    display: flex;
+  }
+  .panContainer {
+    flex: 4;
+    display: flex;
+    margin-left: 25%;
+    margin-top: 90%;
+  }
+  .homeContent {
+    height: 50%;
+  }
+  .aboutContent {
+    margin-top: 0;
+    height: 90%;
+  }
+  .aboutHeading {
+    font-size: 2.5em;
+    color: #28212C;
+    font-weight: lighter;
+  }
+  .aboutIntro {
+    font-size: 1.3em;
+    color: #492909;
+    display: inline-block;
+    margin-inline-end: 15%;
+    overflow-wrap: break-word;
+  }
+  .aboutExp {
+    font-size: 1.3em;
+    color: #492909;
+    display: inline-block;
+    margin-inline-end: 15%;
+    overflow-wrap: break-word;
+  }
+  .aboutHobby {
+    font-size: 1.3em;
+    color: #492909;
+  }
+  .aboutAccent {
+    color: #154877;
+  }
+  .aboutDarkAcc {
+    color: #35203f;
+  }
+  .aboutQuip {
+    font-style: oblique;
+  }
+  .aboutYear {
+    color: black;
+  }
+  .aboutTopics {
+    font-style: oblique;
+    display: inline-block;
+    margin-inline-end: 20%;
+    overflow-wrap: break-word;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  @media screen and (max-width: 1200px) {
+    .sideAnimation {
+      display: none;
+    }
+    .aboutIntro {
+      margin-inline-end: 0;
+    }
+    .aboutTopics {
+      margin-inline-end: 0;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .contentSection {
+      margin-left: 5%;
+    }
+    .aboutIntro {
+      margin-inline-end: 0;
+    }
+    .aboutTopics {
+      margin-inline-end: 0;
+    }
+  }

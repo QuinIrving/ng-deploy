@@ -1,0 +1,241 @@
+.contentSection {
+    height: 90%;
+    margin: 2% 16% 1% 20%;
+    display: flex;
+  }
+  .gridContent {
+    display: flex;
+    justify-content: center;
+  }
+  .contentGridBox {
+    width: 100%;
+    padding: 6% 1%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gridHeader {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 1.8em;
+  }
+  .contentGridTile {
+    border: 1px solid black;
+    width: 30%;
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+    align-self: flex-start;
+    height: 50%;
+  }
+  .hoverEffect {
+    font-size: 1em;
+  }
+  .tileEnlarge {
+    width: 200%;
+    z-index: 1;
+  }
+  .tileShrink {
+    width: 100%;
+    z-index: -1;
+  }
+  .topRect {
+    width: 20vw;
+    height: 10vw;
+    background-color: #caccce;
+    border: 4px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 0;
+    text-align: center;
+    z-index: 1;
+  }
+  .topLid {
+    display: inline-block;
+    width: 20vw;
+    height: 2vw;
+    position: relative;
+    background-color: #caccce;
+    border: 4px solid black;
+  }
+  .topRectLid {
+    display: inline-block;
+    width: 20vw;
+    height: 2vw;
+    position: relative;
+    background-color: #caccce;
+    border: 4px solid black;
+    top: -5vw;
+    left: -4px;
+    z-index: -1;
+  }
+  .bottomRectLid {
+    width: 20vw;
+    height: 2vw;
+    position: relative;
+    background-color: #caccce;
+    border: 4px solid black;
+    border-top: 2px solid black;
+    margin-top: 2vw;
+    z-index: -1;
+    margin-bottom: 2vw;
+  }
+  .bottomRect {
+    width: 20vw;
+    height: 13vw;
+    background-color: #caccce;
+    border: 4px solid black;
+    z-index: -2;
+    display: inline-block;
+    position: absolute;
+    margin-top: calc(-10vw - 6px) ;
+  }
+  .rectHandle {
+    display: inline-block;
+    width: 2vw;
+    height: 1vw;
+    background-color: black;
+    position: relative;
+    top: calc(50% - 0.5vw - 4px);
+    border: 4px solid black;
+  }
+  .rectExpand {
+    animation: expandRect 3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes expandRect {
+    0% {
+  
+    }
+    100% {
+      transform: scale(1.6, 1.2);
+      z-index: 0;
+    }
+  }
+  .bottomWaffle {
+    background: linear-gradient(315deg, transparent 75%, #000000 0)-16px 0,
+        linear-gradient(45deg, transparent 75%, #000000 0) 16px 0,
+        linear-gradient(135deg, #333 50%, transparent 0) 0 0,
+        linear-gradient(45deg, #4d4d4d 50%, #666 0) 0 0 #666; 
+    background-size: 32px 32px;
+    margin: 5%;
+    width: 90%;
+    height: 80%;
+    display: inline-block;
+  }
+  .leftWaffleLine {
+    display: inline-block;
+    width: calc(50% - 1vw - 4px);
+    height: 2px;
+    background-color: black;
+  }
+  .rightWaffleLine {
+    display: inline-block;
+    width: calc(50% - 1vw - 4px);
+    height: 2px;
+    background-color: black;
+  }
+  .projectCover {
+    display: inline-block;
+    height: 100%;
+    padding-top: 4.9vw;
+  }
+  .bottomRectZIncrease {
+    z-index: 0;
+  }
+  .openTopWaffle {
+    animation: openWaffle 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+    transform-origin: top center;
+  }
+  @keyframes openWaffle {
+    0% {
+  
+    }
+    25% {
+      color: black;
+    }
+    26%, 100% {
+      color: transparent;
+    }
+    100% {
+      transform: rotateX(180deg);
+    }
+  }
+  @keyframes hideText {
+    0%, 100% {
+      color: transparent;
+    }
+  }
+  .openTopHandle {
+    animation: openHandle 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+    transform-origin: top center;
+  }
+  @keyframes openHandle {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: -22vw;
+      transform: rotateX(90deg);
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .rect > div, .topRectLid {
+      width: 40vw;
+    }
+    .topRect {
+      height: 15vw;
+    }
+    .bottomRect {
+      height: 18vw;
+      margin-top: calc(-15vw - 6px)
+    }
+    .contentSection {
+      margin: 7% 8% 1% 8%;
+    }
+    .rectExpand {
+      animation: expandRectSmall 3s;
+      animation-fill-mode: forwards;
+    }
+  }
+  @keyframes expandRectSmall {
+    0% {
+  
+    }
+    100% {
+      transform: scale(1.3, 1.1);
+      z-index: 0;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .rect > div, .topRectLid {
+      width: 60vw;
+    }
+    .topRect {
+      height: 25vw;
+    }
+    .bottomRect {
+      height: 28vw;
+      margin-top: calc(-25vw - 6px)
+    }
+    .contentSection {
+      margin: 7% 18% 1% 18%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .rect > div, .topRectLid {
+      width: 70vw;
+    }
+    .topRect {
+      height: 25vw;
+    }
+    .bottomRect {
+      height: 28vw;
+      margin-top: calc(-25vw - 6px)
+    }
+    .contentSection {
+      margin: 7% 13% 1% 13%;
+    }
+  }

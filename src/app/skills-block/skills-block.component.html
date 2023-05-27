@@ -1,1 +1,61 @@
-<p>skills-block works!</p>
+<section class="contentSection aboutSkills">
+    <span class="aboutPoints">
+      <div class="skillsContainer">
+        <div class="softSide">
+          <div class="aHeader">Software Development</div>
+          <div class="lContainer">
+            <div class="lVert"></div>
+          </div>
+          <div class="lHori"></div>
+          <ng-container *ngFor="let skill of skills">
+            <div class="singlePoint" *ngIf="skill.type == 'Software'">
+              <div class="lBullets">
+                <div class="lLine"></div>
+              </div>
+              <div class="lPoints">
+                <span class="lText aboutAccent">
+                  {{skill.leftSkill}}
+                </span>
+              </div>
+              <div class="rPoints">
+                <span class="rText aboutAccent">
+                  {{skill.rightSkill}}
+                </span>
+              </div>
+              <div class="rBullets">
+                <div class="rLine"></div>
+              </div>
+            </div>
+        </ng-container>
+        </div>
+        
+        <div class="webSide">
+          <div class="aHeader">Web Development</div>
+          <div class="lContainer">
+            <div class="lVert"></div>
+          </div>
+          <div class="lHori"></div>
+          <ng-container *ngFor="let skill of skills">
+            <div class="singlePoint" *ngIf="skill.type == 'Web'">
+              <div class="lBullets">
+                <div class="lLine"></div>
+              </div>
+              <div class="lPoints">
+                <span class="lText aboutAccent">
+                  {{skill.leftSkill}}
+                </span>
+              </div>
+              <div class="rPoints">
+                <span class="rText aboutAccent">
+                  {{skill.rightSkill}}
+                </span>
+              </div>
+              <div class="rBullets">
+                <div class="rLine"></div>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </span>
+  </section>

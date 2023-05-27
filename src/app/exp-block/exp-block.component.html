@@ -1,1 +1,13 @@
-<p>exp-block works!</p>
+<section class="expContent" id="experience">
+    <div class="experienceContainer">
+    <h3 class="expHeader"><u>Experience</u></h3>
+    <div class="expPanel" #test *ngFor="let p of panels">
+      <div class="panelHeader fixHeader {{p.side}}" (click)="panelClicked(test)">
+        <div class="panelHeaderLeft">{{p.titleL}}<br>\</div>
+        <div class="panelHeaderRight">{{p.titleR}}<br>/</div>
+      </div>
+      <div class="panelContent hidePanel" [innerHTML]="p.html">
+      </div>
+    </div>
+    </div>
+  </section>

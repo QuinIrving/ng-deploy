@@ -1,1 +1,28 @@
-<p>proj-block works!</p>
+<section class="contentSection projectSection" id="projects">
+    <div class="gridContent">
+    <div class="contentGridBox">
+      <h3 class="gridHeader">
+        <u>Projects</u>
+      </h3>
+    <div class="rect" #gridTile *ngFor="let tile of tiles" (mouseover)="projectHover(gridTile)" (mouseout)="projectExit(gridTile)">
+      <div class="topRect">
+        <span class="topWaffle">
+          <span class="projectCover">
+            Coming Soon
+          </span>
+        </span>
+        <span class="topRectLid">
+          <span class="rectHandle"></span>
+        </span>
+      </div>
+      <div class="bottomRect">
+        <span class="bottomWaffle">
+          <span class="backDivider"></span>
+        </span>
+      </div>
+      <div class="bottomRectLid">
+      </div>
+    </div>
+    </div>
+   </div>
+  </section>
