@@ -23,6 +23,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { IconDataService } from './icon-data.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     MatSidenavModule,
     PdfViewerModule
   ],
-  providers: [],
+  providers: [IconDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

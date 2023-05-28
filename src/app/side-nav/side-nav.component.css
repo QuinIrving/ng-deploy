@@ -10,7 +10,7 @@
 .iconSvg {
     height: 64px;
     width: 64px;
-    color: white;
+    color: #967259;
 }
 .sideNavContent {
     display: none;
@@ -28,6 +28,9 @@
     display: inline-block;
     background: black;
     width: 100%;
+}
+.headerIcon {
+    color: white;
 }
 @media screen and (max-width: 800px) {
     .sideNavDisplay {
