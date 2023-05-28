@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BRIEFCASES } from 'src/assets/data/briefcases';
 
 @Component({
   selector: 'app-proj-block',
@@ -6,14 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./proj-block.component.css']
 })
 export class ProjBlockComponent {
-  tiles = [
-    {text: 'One', cols: 1, rows: 1, colour: 'lightblue'},
-    {text: 'Two', cols: 1, rows: 1, colour: 'purple'},
-    {text: 'Three', cols: 1, rows: 1, colour: 'red'},
-    {text: 'Four', cols: 1, rows: 1, colour: 'green'},
-    {text: 'Five', cols: 1, rows: 1, colour: 'yellow'},
-    {text: 'Six', cols: 1, rows: 1, colour: 'pink'}
-  ];
+  
+  tiles = BRIEFCASES;
   
   projectHover(tile: HTMLElement) {
     tile.classList.add("rectExpand");
