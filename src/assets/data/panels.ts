@@ -30,7 +30,7 @@ export const PANELS: Panel[] = [
     <br>
     <br>
     <span class="panelTopic">Result:</span> These projects strictly <span class="aboutDarkAcc">followed</span> the <span class="aboutDarkAcc">security guidelines</span> 
-    provided and <span class="aboutDarkAcc">demonstrated</span> the wide array of
+    provided, and <span class="aboutDarkAcc">demonstrated</span> the wide array of
     <span class="aboutDarkAcc">methods</span> to <span class="aboutDarkAcc">transfer data to</span> and <span class="aboutDarkAcc">from databases</span>, 
     while <span class="aboutDarkAcc">adhering</span> to the <span class="aboutDarkAcc">Model View Controller pattern</span>.`},
 
@@ -79,7 +79,7 @@ export const PANELS: Panel[] = [
     of <span class="aboutDarkAcc">different algorithms</span>.`},
 
     {titleL: 'Computer & Net', titleR: 'work Security', side: 'leftEgg', html: `
-    <span class="panelTopic">Project Challenge:</span> <span class="aboutDarkAcc">Securing devices, websites, softwares</span> against different 
+    <span class="panelTopic">Project Challenge:</span> <span class="aboutDarkAcc">Securing devices, websites, and softwares</span> against different 
     <span class="aboutDarkAcc">threat actors</span>, <span class="aboutDarkAcc">malware</span>, & <span class="aboutDarkAcc">vulnerabilities</span>. Some examples include: 
     <span class="aboutAccent">SQL injection</span>, <span class="aboutAccent">Phishing attempts</span>, & <span class="aboutAccent">Trojans</span>.
     <br>
