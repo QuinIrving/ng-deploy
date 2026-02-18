@@ -25,7 +25,7 @@ The "Coffee/Breakfast" theme was achieved through custom CSS layering:
 
 -   **Custom UI Elements:** Specialized buttons and cards designed to look like eggs, or waffle makers.
     
--   **Warm Palette:** A curated variable-based color system using cream, espresso, and soft amber tones.
+-   **Warm Palette:** A curated variable-based colour system using cream, espresso, and soft amber tones.
     
 -   **Responsive Layout:** Flexbox and Percentage based implementations to ensure the "cafe" stays organized on mobile.
     
